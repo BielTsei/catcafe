@@ -2,6 +2,7 @@
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   outline: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,10 +10,13 @@ body {
 }
 
 .header {
+  max-width: 1280px;
   padding: 40px 4%;
-  /* position: fixed;
-  top: 0;
-  left: 0; */
+  background-image: url(/assets/img_header.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  margin: auto;
 }
 
 header ul li {
@@ -48,17 +52,6 @@ header ul li a {
   justify-content: space-between;
 }
 
-.banner {
-  height: 100vh;
-  background-image: url(/assets/img_header.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 #button_delivery {
   background-color: #431b1b;
   color: #fff;
@@ -82,9 +75,9 @@ header ul li a {
 }
 
 .header-container {
+  display: flex;
   max-width: 1180px;
   margin: auto;
-  display: flex;
   flex-direction: column;
 }
 
@@ -106,4 +99,184 @@ header ul li a {
 header p {
   color: #3c0e0e;
   line-height: 30px;
+}
+
+#hr-coffes {
+  width: 66px;
+  height: 1.5px;
+  background-color: #3c0e0e;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.drinks {
+  background-image: url(/assets/background_drinks.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.drinks h1 {
+  color: #3c0e0e;
+  font-size: 30pt;
+  text-align: center;
+}
+
+.drinks-main-paragraph {
+  color: #3c0e0e;
+  font-size: 14pt;
+  text-align: center;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+#see-more {
+  margin-top: 30px;
+  color: #3c0e0e;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 50px;
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+
+#card1 {
+  width: 323.65px;
+  height: 468.15px;
+  background: linear-gradient(to bottom left, #f7d2d0, #c27d7a);
+  border-radius: 48px;
+  display: flex;
+  padding: 20px 10px 20px 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#card2 {
+  width: 323.65px;
+  height: 468.15px;
+  background: linear-gradient(to bottom left, #fafafa, #541511a8);
+  border-radius: 48px;
+  display: flex;
+  padding: 20px 10px 20px 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#card3 {
+  width: 323.65px;
+  height: 468.15px;
+  background: linear-gradient(to bottom left, #0a0909f0, #541511f4);
+  border-radius: 48px;
+  display: flex;
+  padding: 20px 10px 20px 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card button {
+  width: 263.78px;
+  height: 46.17px;
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.447);
+}
+.card a {
+  color: #000000;
+  font-weight: 500;
+  font-size: 14pt;
+}
+
+.card h3 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 24pt;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+#price {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14pt;
+  text-align: center;
+}
+
+#drinks-paragraph {
+  color: #fff;
+  font-size: 12pt;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.croissants h1 {
+  margin-top: 30px;
+  color: #4d1d1d;
+  font-size: 60pt;
+  font-weight: 700;
+}
+
+#hr-croissants {
+  width: 50px;
+  height: 1.5px;
+  background-color: #4d1d1d;
+  border: none;
+}
+
+.croissants h4 {
+  color: #3c0e0e;
+  font-size: 25pt;
+  font-weight: 500;
+}
+
+.croissants p {
+  font-size: 15pt;
+  color: #3c0e0e;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  line-height: 26px;
+}
+
+.croissants a {
+  color: #3c0e0e;
+  font-weight: 700;
+  font-size: 14pt;
+}
+
+#price-croissants {
+  width: 110px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 47px;
+  color: #4d1d1d;
+  font-weight: 700;
+  font-size: 14pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.croissants {
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 160px;
+  margin: auto;
+  padding-top: 90px;
+}
+
+.img_croissants img {
+  width: 500px;
+  height: 440px;
 }
