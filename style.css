@@ -282,19 +282,21 @@ header p {
 }
 
 .embalagens {
+  max-width: 1280px;
   background: linear-gradient(#f3c7c4, #541511ef);
   width: 1115px;
   height: 397px;
   border-radius: 48px;
   display: flex;
   padding: 0px 30px 15px 0px;
-  margin: auto;
+  margin: 80px auto 0px auto;
   gap: 30px;
 }
 
 .embalagens img {
   width: 589px;
   height: 379px;
+  border-radius: 30px;
 }
 
 .embalagens h1 {
@@ -331,3 +333,160 @@ header p {
   align-items: flex-end;
   flex-direction: column;
 }
+
+.background-about-us {
+  height: 90vh;
+  background-image: url(/assets/background-sobre_nos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.about-us {
+  max-width: 1280px;
+  padding: 0px 50px 0px 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+  margin: 0px auto 0px auto;
+}
+
+.about-us h2 {
+  color: #4d1d1d;
+  font-size: 32pt;
+  line-height: 50px;
+}
+
+#title-about-us {
+  color: #4d1d1d;
+  font-size: 14pt;
+  margin-bottom: 13px;
+}
+#sub-title-about-us {
+  color: #4d1d1d;
+  font-weight: 700;
+  font-size: 16pt;
+  margin-bottom: 28px;
+}
+
+#paragraph-about-us {
+  color: #3c0e0e;
+  font-size: 14pt;
+  line-height: 28px;
+}
+
+#title-locate_hours {
+  font-size: 42pt;
+  color: #fff;
+}
+
+#hr-locate-hours {
+  width: 52px;
+  height: 1.5px;
+  border: none;
+  background-color: #fff;
+  float: left;
+}
+
+.locate-hours {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 85px;
+}
+
+.texts-locate-hours {
+  margin: 52px 0px 61px 42px;
+}
+
+#tiltle-days {
+  font-weight: 700;
+  font-size: 14pt;
+}
+
+.container1-locate p {
+  color: #fff;
+  line-height: 25px;
+  float: left;
+  font-weight: 300;
+}
+
+.container1-locate {
+  width: 744px;
+  height: 457px;
+  background: linear-gradient(120deg, #541511d5, #f3c7c4);
+  border-radius: 48px 0px 0px 48px;
+  display: flex;
+}
+
+.container1-locate img {
+  width: 430px;
+  height: 362px;
+}
+
+.container2-locate {
+  width: 373px;
+  height: 457px;
+  background: linear-gradient(#54151191, #f3c7c4);
+  border-radius: 0px 48px 48px 0px;
+}
+
+.container2-locate h2 {
+  color: #fff;
+  font-size: 30pt;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 28px;
+}
+
+.container2-locate p {
+  color: #fff;
+  font-size: 14pt;
+  font-weight: 300;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hr-locate {
+  width: 280px;
+  height: 1.5px;
+  background-color: #fff;
+  margin-bottom: 28px;
+}
+
+.locate {
+  margin-top: 35px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+#hr-footer {
+  width: 1178px;
+  height: 1.5px;
+  background-color: #0000007d;
+}
+
+.footer {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+}
+
+.footer h5 {
+  color: #282828;
+  font-size: 14pt;
+  font-weight: 600;
+}
+
+.footer p,
+a {
+  color: #3c0e0e;
+}
+
+.institucional;
