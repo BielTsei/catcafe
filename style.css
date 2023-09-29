@@ -389,6 +389,8 @@ header p {
   border: none;
   background-color: #fff;
   float: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .locate-hours {
@@ -404,6 +406,7 @@ header p {
 #tiltle-days {
   font-weight: 700;
   font-size: 14pt;
+  margin-bottom: 18px;
 }
 
 .container1-locate p {
@@ -419,6 +422,7 @@ header p {
   background: linear-gradient(120deg, #541511d5, #f3c7c4);
   border-radius: 48px 0px 0px 48px;
   display: flex;
+  align-items: center;
 }
 
 .container1-locate img {
@@ -474,8 +478,9 @@ header p {
 
 .footer {
   max-width: 1280px;
-  margin: auto;
+  margin: 45px auto 104px auto;
   display: flex;
+  justify-content: space-around;
 }
 
 .footer h5 {
@@ -486,7 +491,32 @@ header p {
 
 .footer p,
 a {
-  color: #3c0e0e;
+  color: #3c0e0eb6;
 }
 
-.institucional;
+.info-catcafe p {
+  margin-top: 14px;
+  line-height: 23px;
+  margin-bottom: 25px;
+}
+
+.institucional span {
+  font-weight: 600;
+}
+
+.institucional h5 {
+  margin-bottom: 14px;
+}
+
+.institucional p,
+a {
+  line-height: 23px;
+}
+
+.links h5 {
+  margin-bottom: 14px;
+}
+
+.links ul {
+  line-height: 23px;
+}
