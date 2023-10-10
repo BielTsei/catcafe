@@ -6,13 +6,15 @@
 }
 
 .header {
-  background: rgb(220, 165, 242);
-  padding-inline: 30px;
+  background-image: url(/assets/img_header.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding-inline: 10%;
 }
 
 .nav {
   max-width: 1280px;
-  height: 70px;
+  height: 100px;
   margin-inline: auto;
 
   display: flex;
@@ -28,12 +30,16 @@
   color: #1a1a1a;
 }
 
+#logo {
+  font-size: 26px;
+}
+
 .nav-list {
   display: flex;
   gap: 32px;
 }
 .nav-list a {
-  color: #fff;
+  color: #3c0e0e;
   font-size: 18px;
   padding-block: 16px;
 }
@@ -42,31 +48,99 @@
   width: 60px;
 }
 
+.btn-delivey {
+  border: none;
+  border-radius: 32px;
+  background-color: #431b1b;
+  width: 110px;
+  height: 42px;
+  color: #fff;
+  font-size: 14px;
+}
+
 .hamburger {
   display: none;
   border: none;
   background: none;
-  border-top: 3px solid #fff;
+  border-top: 3px solid #3c0e0e;
   cursor: pointer;
   padding: 0px;
 }
 
-.hamburger::before,
+.hamburger::before, /* Criou o menu hamburger, o traço do meio e em baixo*/
 .hamburger::after {
   content: " ";
   display: block;
   width: 30px;
   height: 3px;
-  background-color: #fff;
+  background-color: #3c0e0e;
   margin-top: 5px;
   position: relative;
   transition: 0.3s;
 }
 
-@media (max-width: 750px) {
+/* -------------------- HOME -----------------------*/
+
+.home {
+  height: 60vh;
+}
+
+.home h1 {
+  color: #3c0e0e;
+  font-size: 80px;
+  margin-top: 15px;
+}
+
+#subtitle {
+  color: #3c0e0e;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 65px;
+}
+
+.home p {
+  margin-top: 30px;
+  color: #3c0e0e;
+  font-size: 16px;
+  line-height: 2;
+  width: 350px;
+}
+
+/* ---------------- DRINKS ------------------*/
+.drinks h1 {
+  color: #3c0e0e;
+  font-size: 30pt;
+  text-align: center;
+}
+
+.drinks-main-paragraph {
+  color: #3c0e0e;
+  font-size: 14pt;
+  text-align: center;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+@media (max-width: 1024px) {
+  .home p {
+    width: 300px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1010px) {
+  .header {
+    background-size: calc(90vh - 10vh);
+  }
+}
+
+@media (max-width: 768px) {
   .hamburger {
     display: block;
     z-index: 1;
+  }
+
+  .nav h1 {
+    font-size: 20px;
   }
 
   .nav-list {
@@ -76,7 +150,7 @@
     width: 100vw;
     height: 100vh;
     background-color: #3c0e0e;
-    clip-path: circle(100px at 90% -15%);
+    clip-path: circle(100px at 90% -20%);
     transition: 1s ease-out;
 
     flex-direction: column;
@@ -89,6 +163,7 @@
   .nav-list a {
     font-size: 24px;
     opacity: 0;
+    color: #fff;
   }
 
   .nav-list li:nth-child(1) a {
@@ -119,10 +194,56 @@
 
   .nav.active .hamburger::before {
     transform: rotate(135deg);
+    background-color: #fff;
   }
 
   .nav.active .hamburger::after {
     transform: rotate(-135deg);
     top: -7px;
+    background-color: #fff;
+  }
+
+  /* --------------- HEADER AND HOME ---------------------- */
+
+  .header {
+    padding-inline: 10%;
+    background-image: url(/assets/image_header_mobile.png);
+    background-size: 400px;
+  }
+
+  #subtitle {
+    font-size: 18px;
+  }
+
+  #title {
+    font-size: 60px;
+  }
+
+  .home p {
+    width: 235px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 580px) {
+  .header {
+    background-size: 350px;
+  }
+
+  #subtitle {
+    margin-top: 40px;
+  }
+
+  #title {
+    font-size: 30px;
+  }
+
+  #logo {
+    font-size: 20px;
+  }
+
+  .home p {
+    width: 167px;
+    line-height: 1.5;
+    margin-top: 18px;
   }
 }
